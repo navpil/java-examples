@@ -1,0 +1,3 @@
+grant codeBase "file:secdemo/target/classes/" {
+    permission java.io.FilePermission "BeanArchive.xml", "read";
+};

@@ -1,0 +1,5 @@
+keystore "file:./truststore.ks";
+
+grant codeBase "file:secdemo.jar" signedBy "Jim" {
+    permission java.io.FilePermission "BeanArchive.xml", "read";
+};
