@@ -1,0 +1,21 @@
+<html>
+    <body>
+
+        <script src="validation.js"></script>
+        <script>
+            function conditionallySubmitForm() {
+                if (validateCarYear(document.getElementById("year").value)) {
+                    document.getElementById("car-form").submit();
+                } else {
+                    alert("Sorry, year is wrong");
+                }
+            }
+        </script>
+        <form id="car-form" name="car-form" method="get" action="car">
+            <label for="year">Year</label>
+            <input id="year" name="year" type="text"/>
+            <input type="button" name="submit-car" value="Send Car" onclick="conditionallySubmitForm()"/>
+        </form>
+
+    </body>
+</html>

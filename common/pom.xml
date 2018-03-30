@@ -58,7 +58,9 @@
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <phase>compile</phase>
+                        <!--Despite what is written in docs, it should be process-sources, not compile-->
+                        <!--<phase>compile</phase>-->
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>compile</goal>
                         </goals>
