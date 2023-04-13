@@ -1,3 +1,0 @@
-grant codeBase "file:ua.lviv.navpil.SecDemo.class" {
-    permission java.io.FilePermission "BeanArchive.xml", "read";
-};

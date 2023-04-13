@@ -8,15 +8,11 @@
 
     <modules>
         <module>common</module>
-        <module>secdemo</module>
-        <module>wildcode</module>
-        <module>instr</module>
+        <module>instrumentation</module>
         <module>spiimpl</module>
         <module>nashornwar</module>
-        <module>utests</module>
         <module>mavendemo</module>
-        <module>compilestackoverflow</module>
-        <module>java9</module>
+        <module>jscript</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -41,7 +37,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
-        <kotlin.version>1.1.3</kotlin.version>
+        <kotlin.version>1.8.20</kotlin.version>
     </properties>
 
 

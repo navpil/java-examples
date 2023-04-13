@@ -6,8 +6,6 @@ public class AnnotationDemo {
 
 
     public static void main(String[] args) {
-        Person person = new Person();
-
         for (Annotation annotation : Person.class.getAnnotations()) {
             if (annotation.annotationType().equals(MyRuntimeAnnotation.class)) {
                 MyRuntimeAnnotation annotation1 = (MyRuntimeAnnotation) annotation;

@@ -1,3 +1,0 @@
-grant codeBase "file:secdemo.jar" {
-    permission java.io.FilePermission "BeanArchive.xml", "read";
-};
