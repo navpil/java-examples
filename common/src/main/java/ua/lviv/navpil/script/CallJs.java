@@ -16,13 +16,11 @@ public class CallJs {
 
     public static void main(String[] args) throws ScriptException, FileNotFoundException, NoSuchMethodException {
         ScriptEngineManager sem = new ScriptEngineManager();
-        ScriptEngine engine = sem.getEngineByName("nashorn");
+        ScriptEngine engine = sem.getEngineByName("javascript");//can also be "js" or "nashorn"
 
-        Object eval = engine.eval("print(\"hello javascript\");");
+//        engine.eval("print(\"hello javascript\");");
 
         doWithEngine(engine, "factorial.js");
-
-
     }
 
     public static void doWithEngine(ScriptEngine nashorn, String scriptName) throws ScriptException, NoSuchMethodException {

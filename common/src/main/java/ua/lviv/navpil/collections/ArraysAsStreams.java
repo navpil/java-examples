@@ -12,7 +12,8 @@ public class ArraysAsStreams {
         List<String> strings = Arrays.asList(new String[]{"1"});
         List<Integer> integers = Arrays.asList(new Integer[]{1});
 
-        List<int[]> listOfASingleListArray = Arrays.asList(new int[]{1});
+        List<int[]> listOfASingleListArray = Arrays.asList(new int[]{1});//!
+        List<Integer> correctList = Arrays.asList(1, 2 ,3);
         List<Integer> ints = Arrays.stream(new int[]{1}).boxed().collect(Collectors.toList());
 
         System.out.println(

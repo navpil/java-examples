@@ -59,7 +59,7 @@ public class FirstNonZeroRow {
 
 
         for (MyFunc finder : finders) {
-            assert finder.findZeroRow(ints, 5, 4) == 3;
+            assert finder.findZeroRow(ints  , 5, 4) == 3;
         }
     }
 

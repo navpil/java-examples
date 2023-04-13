@@ -25,8 +25,8 @@ var json = function(name) {
 }
 
 var backReferenceJava = function() {
-    var callJs = Java.type("ua.lviv.navpil.script.CallJs");
-    var cc = new callJs();
+    var CallJs = Java.type("ua.lviv.navpil.script.CallJs");
+    var cc = new CallJs();
     print(cc.instanceM());
-    print(callJs.helloFromJava("Jane"));
+    print(CallJs.helloFromJava("Jane"));
 }

@@ -22,7 +22,7 @@ public class Ordering {
         ints.parallelStream().forEach(Ordering::show);
         System.out.println();
 
-        ints.parallelStream().forEach(Ordering::show);
+        ints.parallelStream().sorted(((Comparator<Integer>) Integer::compare).reversed()).forEach(Ordering::show);
         System.out.println();
 
         ints.parallelStream().forEachOrdered(Ordering::show);

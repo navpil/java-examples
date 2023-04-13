@@ -8,7 +8,7 @@ public class ExceptionsTest {
     public static void main(String[] args) {
 
         ExceptionsTest e = new ExceptionsTest();
-//        e.callMethodAsAFunction(rethrowFunction(e::methodWithException));
+////        e.callMethodAsAFunction(rethrowFunction(e::methodWithException));
         try {
             e.noGenericsThrowable();
         } catch (Throwable throwable) {
@@ -58,6 +58,10 @@ public class ExceptionsTest {
 
     public <E extends Exception> void methodWithThrowable() throws E {
         throw (E)new IOException();
+    }
+
+    private <E extends Exception> void sneakyThrow(Throwable e) throws E {
+        throw (E)e;
     }
 
     public void noGenericsThrowable() throws Throwable {
