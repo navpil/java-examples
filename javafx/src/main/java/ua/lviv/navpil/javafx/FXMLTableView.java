@@ -12,9 +12,9 @@ public class FXMLTableView extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Table View example");
         Scene scene = new Scene(
-                FXMLLoader.<Pane>load(getClass().getResource("tableview.fxml"))
+                FXMLLoader.<Pane>load(getClass().getClassLoader().getResource("javafx/tableview.fxml"))
         );
-        scene.getStylesheets().add(getClass().getResource("tableview.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getClassLoader().getResource("javafx/tableview.css").toExternalForm());
         primaryStage.setScene(scene);
 
         primaryStage.show();

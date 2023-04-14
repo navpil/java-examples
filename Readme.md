@@ -7,6 +7,15 @@ These are:
  - [Security Manager](https://openjdk.org/jeps/411)
  - [Nashorn](https://openjdk.org/jeps/372) and other scripting engines
 
+## Polyglot
+
+Module `jscript` shows how to execute javascript code in Java and its interoperability.
+It works, but probably it's better to have a look at `Graal VM` with `Truffle`.
+
+Please also read `Readme.md` in the `nashornwar` module, which shows how to use javascript on Java backend.
+
+TODO: look at [Graal VM](https://www.graalvm.org/)
+
 ## Instrumentation
 
 Requires to add this as a VM options:

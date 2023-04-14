@@ -7,8 +7,8 @@ public class Regexes {
 
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("(he(llo)) (world)");
-        Matcher matcher = pattern.matcher("Oh hello world! hello world");
+        Pattern pattern = Pattern.compile("(he(l+o)) (world)");
+        Matcher matcher = pattern.matcher("Oh hello world! hellllo world");
 
         System.out.println(matcher.groupCount());
 

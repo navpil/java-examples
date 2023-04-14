@@ -13,6 +13,7 @@
         <module>nashornwar</module>
         <module>mavendemo</module>
         <module>jscript</module>
+        <module>javafx</module>
     </modules>
 
     <packaging>pom</packaging>

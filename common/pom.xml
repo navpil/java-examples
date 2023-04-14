@@ -119,53 +119,6 @@
             <version>1.1</version>
         </dependency>
 
-        <!-- JavaFX was removed since Java11 (but Swing was not)-->
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-base</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-media</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-swing</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-web</artifactId>
-            <version>11</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.openjdk.nashorn/nashorn-core -->
-        <!-- Nashorn was removed -->
-        <dependency>
-            <groupId>org.openjdk.nashorn</groupId>
-            <artifactId>nashorn-core</artifactId>
-            <version>15.4</version>
-        </dependency>
-
-
-
         <dependency>
             <groupId>org.ektorp</groupId>
             <artifactId>org.ektorp</artifactId>
@@ -183,18 +136,7 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>scijava</groupId>-->
-<!--            <artifactId>java-engine</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>scijava</groupId>-->
-<!--            <artifactId>scheme-engine</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-
+        <!-- JAXB is not actually working for now -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
@@ -210,6 +152,11 @@
             <artifactId>jaxb-impl</artifactId>
             <version>${jaxb.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 </project>

@@ -24,5 +24,20 @@
             <artifactId>nashorn-core</artifactId>
             <version>15.4</version>
         </dependency>
+
+        <!-- These dependencies no longer work, no way of running scheme scripts in Java anymore -->
+
+        <!--        <dependency>-->
+        <!--            <groupId>scijava</groupId>-->
+        <!--            <artifactId>java-engine</artifactId>-->
+        <!--            <version>1.0</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>scijava</groupId>-->
+        <!--            <artifactId>scheme-engine</artifactId>-->
+        <!--            <version>1.0</version>-->
+        <!--        </dependency>-->
+
     </dependencies>
 </project>
