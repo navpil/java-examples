@@ -3,7 +3,9 @@ package ua.lviv.navpil.spi;
 import java.util.ServiceLoader;
 
 /**
- * For this example to work, change the run configuration, so that classpath uses module spiimpl
+ * For this example to work classpath should use module "spiimpl"
+ * This dependency is included in the pom.xml.
+ * You may comment it out to see how this example will fail
  */
 public class Dictionaries {
 
