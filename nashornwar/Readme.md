@@ -1,5 +1,9 @@
 # Nashorn
 
+**Nashorn engine [was removed from Java 15](https://openjdk.org/jeps/372)** and you should use [Open JDK Nashorn](https://github.com/openjdk/nashorn) or switch to [Graal VM](https://www.graalvm.org/latest/docs/getting-started/).
+Some of the information provided below will be obsolete.
+Code still works because the engine was added to the `pom.xml`.
+
 JSR 223
 
 Replaces Rhino engine and uses the invokedynamic (introduced in Java 7, 2011)
