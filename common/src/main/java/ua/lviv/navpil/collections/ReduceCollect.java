@@ -9,7 +9,7 @@ public class ReduceCollect {
     public static void main(String[] args) {
         List<Integer> one2ten = IntStream.range(1, 1000).boxed().collect(Collectors.toList());
 
-        //reduce should be immutable
+        //reduce should be immutable, therefore this example is WRONG (check the results in the end)
         Averager reduce = one2ten.parallelStream().reduce(
                 new Averager(),
                 (averager, integer) -> {

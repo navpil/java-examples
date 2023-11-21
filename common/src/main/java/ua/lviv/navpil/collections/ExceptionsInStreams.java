@@ -6,6 +6,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+Streams do not accept lambdas which throw checked exceptions.
+Need to workaround it some way
+ */
 public class ExceptionsInStreams {
 
     public static void main(String[] args) throws IOException {

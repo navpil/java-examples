@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/*
+Priority queues are not iterated in the Priority order.
+
+ */
 public class PriorityQueues {
     public static void main(String[] args) {
         Queue<String> pq = new PriorityQueue<>();

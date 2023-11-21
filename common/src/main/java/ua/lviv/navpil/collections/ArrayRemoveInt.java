@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/*
+Naive removal by index in ascending order will give OutOfBounds Exception
+ */
 public class ArrayRemoveInt {
 
     public static void main(String[] args) {
@@ -13,6 +16,7 @@ public class ArrayRemoveInt {
         System.out.println(items);
 
         List<Integer> indexesToRemove = IntStream.rangeClosed(5, 95).boxed().collect(Collectors.toList());
+        //Try commenting the Collections.reverse - you will get OOB
         Collections.reverse(indexesToRemove);
 
         for (Integer index : indexesToRemove) {
